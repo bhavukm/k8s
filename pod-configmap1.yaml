@@ -12,10 +12,10 @@ spec:
     - name: training
       valueFrom:
         configMapKeyRef:
-          name: demo-configmap
-          key: channel.name
-    - name: CHANNELOWNER
+          name: configmap1
+          key: training
+    - name: trainer
       valueFrom:
         configMapKeyRef:
-          name: demo-configmap
-          key: channel.owner
+          name: configmap1
+          key: bhavuk
