@@ -18,4 +18,4 @@ spec:
       valueFrom:
         configMapKeyRef:
           name: configmap1
-          key: k8s
+          key: training
