@@ -9,13 +9,13 @@ spec:
     command: ["/bin/sh"]
     args: ["-c", "sleep 600"]
     env:
-    - name: training
-      valueFrom:
-        configMapKeyRef:
-          name: configmap1
-          key: training
     - name: trainer
       valueFrom:
         configMapKeyRef:
           name: configmap1
-          key: bhavuk
+          key: trainer
+    - name: training
+      valueFrom:
+        configMapKeyRef:
+          name: configmap1
+          key: k8s
