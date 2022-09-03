@@ -4,7 +4,7 @@ metadata:
   name: busybox
 spec:
   volumes:
-  - name: demo
+  - name: vol
     configMap:
       name: configmap1
   containers:
@@ -13,5 +13,5 @@ spec:
     command: ["/bin/sh"]
     args: ["-c", "sleep 600"]
     volumeMounts:
-    - name: demo
-      mountPath: /mydata
+    - name: vol
+      mountPath: /vol
