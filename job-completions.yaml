@@ -9,5 +9,5 @@ spec:
       containers:
       - name: busybox
         image: busybox
-        command: ["sleep", "60"]
+        command: ["echo", "it will complete twice"]
       restartPolicy: Never
