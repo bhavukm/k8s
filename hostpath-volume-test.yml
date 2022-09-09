@@ -11,7 +11,7 @@ spec:
     volumeMounts:
     - name: host-data
       mountPath: /data
-   volumes:
+  volumes:
    - name: host-data
      hostPath:
       path: /etc/hostPath
