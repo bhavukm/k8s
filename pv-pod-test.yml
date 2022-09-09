@@ -11,7 +11,7 @@ spec:
     volumeMounts:
     - name: pv-host-data
       mountPath: /data
- volumes:
- - name: pv-host-data
-   persistentVolumeClaim:
+  volumes:
+  - name: pv-host-data
+    persistentVolumeClaim:
      claimName: hostpath-pvc
