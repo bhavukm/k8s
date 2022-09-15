@@ -10,5 +10,5 @@ spec:
     livenessProbe:
       exec:
         command: ["echo", "Hello, world!"]
-        initialDelaySeconds: 5
-        periodSeconds: 5
+      initialDelaySeconds: 5
+      periodSeconds: 5
