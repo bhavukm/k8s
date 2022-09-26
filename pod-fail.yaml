@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  namespace: test
+  name: pod-fail
+spec:
+  containers:
+  - name: nginx
+    image: nginx:alp1ne
